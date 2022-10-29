@@ -1,0 +1,31 @@
+//Calculate area and circumference of a circle using functions
+#include<stdio.h>
+const float PI = 3.1415927;
+float area(float radius);
+float circum(float radius);
+void main() {
+ float radius;
+ clrscr();
+ printf("Enter radius: ");
+ scanf("%f", &radius);
+ printf("Area : %.3f\n", area(radius));
+ printf("Circumference: %.3f\n", circum(radius));
+ getch();
+}
+/* return area of a circle */
+float area(float radius) {
+  return PI * radius * radius;
+}
+//Program to find factorial
+#include<stdio.h>  
+int main()    
+{    
+ int i,fact=1,number;    
+ printf("Enter a number: ");    
+  scanf("%d",&number);    
+    for(i=1;i<=number;i++){    
+      fact=fact*i;    
+  }    
+  printf("Factorial of %d is: %d",number,fact);    
+return 0;  
+}   
